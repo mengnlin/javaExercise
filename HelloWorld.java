@@ -3,11 +3,10 @@ public class HelloWorld {
         drawTriangle(10);
         int numbers[] = { 1, 2, 3, 4, 5 };
         getMax(numbers);
-        isLeapYear(1700);
-        isLeapYear(1800);
-        isLeapYear(1900);
-        isLeapYear(1600);
-        isLeapYear(2000);
+        isCatPlaying(true, 10);
+        isCatPlaying(false, 36);
+        isCatPlaying(false, 35);
+
     }
 
     public static void drawTriangle(int N) {
@@ -44,5 +43,18 @@ public class HelloWorld {
         }
         System.out.println(leapYear);
         return leapYear;
+    }
+
+    public static boolean isCatPlaying(boolean isSummer, int temp) {
+        boolean isPlaying = true;
+        int lowerTemp = 25;
+        int upperTemp = 35;
+        if (isSummer) {
+            upperTemp = 45;
+        }
+        if (temp < lowerTemptemp > upperTemp) {
+            isPlaying = false;
+        }
+        return isPlaying;
     }
 }
