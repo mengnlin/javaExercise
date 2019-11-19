@@ -52,9 +52,10 @@ public class HelloWorld {
         if (isSummer) {
             upperTemp = 45;
         }
-        if (temp < lowerTemptemp > upperTemp) {
+        if (temp < lowerTemp || temp > upperTemp) {
             isPlaying = false;
         }
+        System.out.println(isPlaying);
         return isPlaying;
     }
 }
